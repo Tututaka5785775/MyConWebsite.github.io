@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#hintText {
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#console {
+    width: 100%;
+    height: 400px;
+    background: #1e1e1e;
+    color: #ffffff;
+    overflow-y: scroll;
+    padding: 10px;
+    font-family: monospace;
+    margin-top: 20px;
+    border: 7px solid #ff0000;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Konsol için hafif gölge */
+}
+
+#console::-webkit-scrollbar {
+    width: 8px; /* Scrollbar genişliği */
+}
+
+#console::-webkit-scrollbar-thumb {
+    background: #888; /* Scrollbar rengi */
+    border-radius: 10px;
+}
+
+#console::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Hover durumunda daha koyu renk */
+}
+
+#inputField {
+    width: calc(100% - 120px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f9f9f9; /* Input kutusu için açık gri arka plan */
+}
+
+#sendButton, #clearButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #00ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 10px;
+    transition: all 0.3s ease; /* Buton geçiş animasyonu */
+}
+
+#clearButton {
+    background-color: #00ff; /* Clear butonu için mavi renk */
+}
+
+#sendButton:hover {
+    background-color: #00ff33;
+    transform: scale(1.1); /* Hover durumunda butonu biraz büyüt */
+}
+
+#clearButton:hover {
+    background-color: #00ff33; /* Hover durumunda daha koyu mavi */
+    transform: scale(1.1); /* Hover durumunda butonu biraz büyüt */
+}
+
+@media (max-width: 600px) {
+    #inputField {
+        width: 100%; /* Input kutusunu mobilde tam genişlik yap */
+    }
+
+    #sendButton, #clearButton {
+        width: 100%; /* Butonları mobilde tam genişlik yap */
+    }
+}
